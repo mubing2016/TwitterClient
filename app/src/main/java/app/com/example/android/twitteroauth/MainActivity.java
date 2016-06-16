@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import timber.log.Timber;
@@ -25,11 +27,29 @@ import twitter4j.TwitterFactory;
 import twitter4j.User;
 import twitter4j.auth.AccessToken;
 import twitter4j.auth.RequestToken;
+//import twitter4j.conf.Configuration;
 import twitter4j.conf.Configuration;
 import twitter4j.conf.ConfigurationBuilder;
+//generate method on top
+//final on top
+//static method -- oncreate -- lifecycle --
 
 
 public class MainActivity extends AppCompatActivity {
+
+    private final String PREF_KEY_OAUTH_TOKEN = "oauth_token";
+    private final String PREF_KEY_OAUTH_SECRET = "oauth_token_secret";
+    private final String PREF_KEY_TWITTER_LOGIN = "isTwitterLogedIn";
+    private final String TWITTER_CALLBACK_URL = "oauth://t4jsample";
+    private String verifier;
+    private Twitter twitter;
+    private AccessToken accessToken = null;
+    private RequestToken requestToken;
+    private SharedPreferences mSharedPreferences; //preference manager
+
+    private User user;
+    //private ArrayList<Status> statuses = new ArrayList<>();
+
     @BindView(R.id.btnLoginTwitter)
     Button btnLoginTwitter;
     @BindView(R.id.btnLogoutTwitter)
@@ -41,20 +61,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.lblUserName)
     TextView lblUserName;
 
-    private static final String TWITTER_CONSUMER_KEY = "FZ5upj4lpNv2EbjkPMF5MirWx";
-    private static final String TWITTER_CONSUMER_SECRET = "aq8Q1B7u8iHGDxFCInnfkRpDr2Wg1XwGi7fiQtRoGdpdIfL5eX";
-    private static final String PREF_KEY_OAUTH_TOKEN = "oauth_token";
-    private static final String PREF_KEY_OAUTH_SECRET = "oauth_token_secret";
-    private static final String PREF_KEY_TWITTER_LOGIN = "isTwitterLogedIn";
-    private static final String TWITTER_CALLBACK_URL = "oauth://t4jsample";
-    private static final String URL_TWITTER_OAUTH_VERIFIER = "oauth_verifier";
-    private static Twitter twitter;
-    private static AccessToken accessToken = null;
-    private static RequestToken requestToken;
-    private static SharedPreferences mSharedPreferences;
-    private User user;
-
     public ResponseList<Status> statuses; //length of 20
+   // String[] texts = new String[20 * 2];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        checkInternet();
+        //checkInternet();
 
         mSharedPreferences = getApplicationContext().getSharedPreferences("MyPref", 0);
 
@@ -74,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
                 // Call login twitter function
                 loginToTwitter();
+                //here catch internet connect exception
             }
         });
 
@@ -92,7 +101,10 @@ public class MainActivity extends AppCompatActivity {
         btnGetTimeline.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                loginToTwitter();
                 Intent intent = new Intent(MainActivity.this, TimelineActivity.class);
+                OAuthAccessTokenTask accessToken = new OAuthAccessTokenTask();
+                accessToken.execute(verifier);
                 startActivity(intent);
             }
         });
@@ -104,7 +116,9 @@ public class MainActivity extends AppCompatActivity {
         if (!isTwitterLoggedInAlready()) {
             twitter = TwitterFactory.getSingleton();
             ConfigurationBuilder builder = new ConfigurationBuilder();
+            String TWITTER_CONSUMER_KEY = "FZ5upj4lpNv2EbjkPMF5MirWx";
             builder.setOAuthConsumerKey(TWITTER_CONSUMER_KEY);
+            String TWITTER_CONSUMER_SECRET = "aq8Q1B7u8iHGDxFCInnfkRpDr2Wg1XwGi7fiQtRoGdpdIfL5eX";
             builder.setOAuthConsumerSecret(TWITTER_CONSUMER_SECRET);
             Configuration configuration = builder.build();
 
@@ -117,10 +131,10 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         requestToken = twitter.getOAuthRequestToken(TWITTER_CALLBACK_URL);
                         Timber.d("REQUEST TOKEN: " + requestToken.toString());
-                        MainActivity.this.startActivity(new Intent(Intent.ACTION_VIEW, Uri
+                        startActivity(new Intent(Intent.ACTION_VIEW, Uri
                                 .parse(requestToken.getAuthenticationURL())));
                     } catch (Exception e) {
-                        Timber.e("log in twitter error.");
+                        Timber.e(e, "request token error");
                     }
                 }
             });
@@ -137,7 +151,8 @@ public class MainActivity extends AppCompatActivity {
         Uri uri = intent.getData();
         if (uri != null && uri.toString().startsWith(TWITTER_CALLBACK_URL)) {
             // oAuth verifier
-            final String verifier = uri.getQueryParameter(URL_TWITTER_OAUTH_VERIFIER);
+            String URL_TWITTER_OAUTH_VERIFIER = "oauth_verifier";
+            verifier = uri.getQueryParameter(URL_TWITTER_OAUTH_VERIFIER);
             Timber.v("VERIFIER: " + verifier);
             try {
                 new OAuthAccessTokenTask().execute(verifier);
@@ -174,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 // Timber.v("IMG_URL: " + texts[22]);
 
-                passArrIntent.putExtra("statuses", texts);
+                passArrIntent.putExtra(getString(R.string.passStatus), texts);
                 startActivity(passArrIntent);
 
             } catch (TwitterException e) {
@@ -210,8 +225,6 @@ public class MainActivity extends AppCompatActivity {
                 // Store login status - true
                 e.putBoolean(PREF_KEY_TWITTER_LOGIN, true);
                 e.apply(); // save changes
-
-
 
                 Timber.d("GOT TOKEN");
                 btnLoginTwitter.setVisibility(View.GONE); // Hide login button
@@ -249,18 +262,18 @@ public class MainActivity extends AppCompatActivity {
         return mSharedPreferences.getBoolean(PREF_KEY_TWITTER_LOGIN, false);
     }
 
-    public void checkInternet() {
-        ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
-        if (!cd.isConnectingToInternet()) {
-            Timber.e("InternetConnection Error");
-            //alert.showAlertDialog(MainActivity.this, "InternetConnection Error", "Please connect to working internet", false);
-        }
-        if (TWITTER_CONSUMER_KEY.trim().length() == 0
-                || TWITTER_CONSUMER_SECRET.trim().length() == 0) {
-            Timber.e("Please set your twitter oauth tokens first!");
-            //alert.showAlertDialog(MainActivity.this, "Twitter oAuth tokens", "Please set your twitter oauth tokens first!", false);
-        }
-    }
+//    public void checkInternet() {
+//        ConnectionDetector cd = new ConnectionDetector(getApplicationContext());
+//        if (!cd.isConnectingToInternet()) {
+//            Timber.e("InternetConnection Error");
+//            //alert.showAlertDialog(MainActivity.this, "InternetConnection Error", "Please connect to working internet", false);
+//        }
+//        if (TWITTER_CONSUMER_KEY.trim().length() == 0
+//                || TWITTER_CONSUMER_SECRET.trim().length() == 0) {
+//            Timber.e("Please set your twitter oauth tokens first!");
+//            //alert.showAlertDialog(MainActivity.this, "Twitter oAuth tokens", "Please set your twitter oauth tokens first!", false);
+//        }
+//    }
 
     @Override
     protected void onNewIntent(Intent intent) {

@@ -14,8 +14,18 @@ public class TimelineActivity extends AppCompatActivity {
 
     public int statusLength = 19;
     public String[] timelineArray = new String[statusLength * 2];
+
+    //get array of objects combined with textArr and imgArr
+
     public String[] textArr = new String[statusLength];
     public String[] imgArr = new String[statusLength];
+
+//    //type in starter, tab
+//    public static void start(Context context) {
+//        Intent starter = new Intent(context, TimelineActivity.class);
+//        starter.putExtra();
+//        context.startActivity(starter);
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

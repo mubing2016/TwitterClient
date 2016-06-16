@@ -13,7 +13,7 @@
     <Button android:id="@+id/btnLoginTwitter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login with Twitter"
+        android:text="@string/login_with_twitter"
         android:layout_marginLeft="10dip"
         android:layout_marginRight="10dip"
         android:layout_marginTop="30dip"/>
