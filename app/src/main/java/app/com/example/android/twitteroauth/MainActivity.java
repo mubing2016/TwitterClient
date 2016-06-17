@@ -1,8 +1,11 @@
 package app.com.example.android.twitteroauth;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -44,7 +47,6 @@ import twitter4j.conf.ConfigurationBuilder;
  */
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     private static final String CONSUMER_KEY = "FZ5upj4lpNv2EbjkPMF5MirWx";
@@ -71,11 +73,11 @@ public class MainActivity extends AppCompatActivity {
     TextView lblUserName;
 
 
-
     public static ResponseList<Status> statuses; //length of 20
     ArrayList<String> texts = new ArrayList<>();
     ArrayList<String> imgUrl = new ArrayList<>();
     public static TwitterBody twitterBody;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -86,6 +88,10 @@ public class MainActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         mSharedPreferences = getApplicationContext().getSharedPreferences("MyPref", 0);
+
+        if (!isConnectingToInternet()) {
+            Toast.makeText(this, "Internet is not available", Toast.LENGTH_SHORT).show();
+        }
 
         btnLoginTwitter.setOnClickListener(new View.OnClickListener() {
 
@@ -259,6 +265,16 @@ public class MainActivity extends AppCompatActivity {
         lblUserName.setVisibility(View.GONE);
         btnGetTimeline.setVisibility(View.GONE);
         btnLoginTwitter.setVisibility(View.VISIBLE);
+    }
+
+    public boolean isConnectingToInternet() {
+        Context context = this.getApplicationContext();
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = connectivityManager.getActiveNetworkInfo();
+
+        return (activeNetwork != null) && (activeNetwork.isConnectedOrConnecting());
     }
 
     @Override

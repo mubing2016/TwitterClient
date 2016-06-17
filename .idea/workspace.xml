@@ -10,17 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86743f8b-8b6f-4984-bc1f-e58e750b1f25" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/AlertDialogManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/ConnectionDetector.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/ListViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/ListViewAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/TimelineActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/TimelineActivity.java" />
     </list>
     <ignored path="TwitterClient.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,22 +38,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.444445">
-              <caret line="200" column="28" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="28" />
+            <state vertical-scroll-proportion="1.9900373">
+              <caret line="252" column="41" selection-start-line="252" selection-start-column="41" selection-end-line="252" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2674#2828#0" expanded="true" />
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2963#3119#0" expanded="true" />
-                <element signature="e#3118#3119#0" expanded="true" />
-                <element signature="e#3165#3485#0" expanded="true" />
-                <element signature="e#3377#3407#0" expanded="true" />
-                <element signature="e#3484#3485#0" expanded="true" />
-                <element signature="e#4200#4784#0" expanded="true" />
-                <element signature="e#4783#4784#0" expanded="true" />
+                <element signature="e#2919#3073#0" expanded="true" />
+                <element signature="e#3072#3073#0" expanded="true" />
+                <element signature="e#3208#3364#0" expanded="true" />
+                <element signature="e#3363#3364#0" expanded="true" />
+                <element signature="e#3410#3730#0" expanded="true" />
+                <element signature="e#3622#3652#0" expanded="true" />
+                <element signature="e#3729#3730#0" expanded="true" />
+                <element signature="e#4445#5029#0" expanded="true" />
+                <element signature="e#5028#5029#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimelineActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimelineActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/TimelineActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5060241">
-              <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#869#899#0" expanded="true" />
@@ -108,7 +105,62 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
-              <folding />
+              <folding>
+                <element signature="e#0#155378#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4885#4886#0" expanded="false" />
+                <element signature="e#4920#4921#0" expanded="false" />
+                <element signature="e#7030#7031#0" expanded="false" />
+                <element signature="e#7097#7098#0" expanded="false" />
+                <element signature="e#11124#11125#0" expanded="false" />
+                <element signature="e#11168#11169#0" expanded="false" />
+                <element signature="e#11222#11223#0" expanded="false" />
+                <element signature="e#11268#11269#0" expanded="false" />
+                <element signature="e#14699#14700#0" expanded="false" />
+                <element signature="e#14743#14744#0" expanded="false" />
+                <element signature="e#14797#14798#0" expanded="false" />
+                <element signature="e#14843#14844#0" expanded="false" />
+                <element signature="e#15945#15946#0" expanded="false" />
+                <element signature="e#15976#15977#0" expanded="false" />
+                <element signature="e#16327#16328#0" expanded="false" />
+                <element signature="e#16378#16379#0" expanded="false" />
+                <element signature="e#33525#33526#0" expanded="false" />
+                <element signature="e#33579#33580#0" expanded="false" />
+                <element signature="e#33907#33908#0" expanded="false" />
+                <element signature="e#33957#33958#0" expanded="false" />
+                <element signature="e#41383#41384#0" expanded="false" />
+                <element signature="e#41451#41452#0" expanded="false" />
+                <element signature="e#45827#45828#0" expanded="false" />
+                <element signature="e#45854#45855#0" expanded="false" />
+                <element signature="e#78489#78490#0" expanded="false" />
+                <element signature="e#78548#78549#0" expanded="false" />
+                <element signature="e#78957#78958#0" expanded="false" />
+                <element signature="e#79005#79006#0" expanded="false" />
+                <element signature="e#84073#84074#0" expanded="false" />
+                <element signature="e#84124#84125#0" expanded="false" />
+                <element signature="e#84354#84355#0" expanded="false" />
+                <element signature="e#84405#84406#0" expanded="false" />
+                <element signature="e#111726#111727#0" expanded="false" />
+                <element signature="e#111774#111775#0" expanded="false" />
+                <element signature="e#111816#111817#0" expanded="false" />
+                <element signature="e#111862#111863#0" expanded="false" />
+                <element signature="e#125497#125498#0" expanded="false" />
+                <element signature="e#125534#125535#0" expanded="false" />
+                <element signature="e#137428#137429#0" expanded="false" />
+                <element signature="e#137459#137460#0" expanded="false" />
+                <element signature="e#138327#138328#0" expanded="false" />
+                <element signature="e#138364#138365#0" expanded="false" />
+                <element signature="e#139440#139441#0" expanded="false" />
+                <element signature="e#139485#139486#0" expanded="false" />
+                <element signature="e#140155#140156#0" expanded="false" />
+                <element signature="e#140200#140201#0" expanded="false" />
+                <element signature="e#140713#140714#0" expanded="false" />
+                <element signature="e#140753#140754#0" expanded="false" />
+                <element signature="e#141294#141295#0" expanded="false" />
+                <element signature="e#141334#141335#0" expanded="false" />
+                <element signature="e#153046#153047#0" expanded="false" />
+                <element signature="e#153093#153094#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -690,6 +742,16 @@
                 <option name="description" value="Prepare com.android.support:support-vector-drawable:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2340Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-appindexing:8.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAppindexing810Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-basement:8.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesBasement810Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.jakewharton:butterknife:8.1.0" />
@@ -1335,6 +1397,16 @@
                 <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-appindexing:8.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesAppindexing810Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.google.android.gms:play-services-basement:8.1.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComGoogleAndroidGmsPlayServicesBasement810Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Prepare com.jakewharton:butterknife:8.1.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComJakewhartonButterknife810Library" />
@@ -1537,7 +1609,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4398139935000" />
+        <entry key="$PROJECT_DIR$" value="4398204662000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1728,11 +1800,13 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton.timber/timber/4.1.2/ea22b9a5942df02927e65c4764a6c5750eea7924/timber-4.1.2.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.ion/ion/2.1.8/8685edbef426e6953721ee180e2e16a6394b389b/ion-2.1.8.aar" />
+                            <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-appindexing/8.1.0/play-services-appindexing-8.1.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/23.4.0/animated-vector-drawable-23.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.4.0/support-v4-23.4.0.aar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/23.4.0/support-vector-drawable-23.4.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.1.0/d6854f42bfb4098d3d2358d93201307b9f1cc95d/butterknife-annotations-8.1.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.koushikdutta.async/androidasync/2.1.8/931767d6b456957e2b0efb582515e6cf4a5c4e1a/androidasync-2.1.8.aar" />
+                            <option value="$USER_HOME$/Library/Android/sdk/extras/google/m2repository/com/google/android/gms/play-services-basement/8.1.0/play-services-basement-8.1.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar" />
                             <option value="$USER_HOME$/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar" />
                             <option value="$MODULE_DIR$/libs/twitter4j-core-4.0.4.jar" />
@@ -1879,9 +1953,9 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/ConnectionDetector.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/TwitterBody.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/ListViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/TimelineActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -1939,28 +2013,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterClient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1992,16 +2044,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="twitteroauth" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TwitterClient" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2297,7 +2339,7 @@
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31139648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31139648" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2335,15 +2377,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2674#2828#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2963#3119#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3165#3485#0" expanded="true" />
-            <element signature="e#3377#3407#0" expanded="true" />
-            <element signature="e#3484#3485#0" expanded="true" />
-            <element signature="e#4200#4784#0" expanded="true" />
-            <element signature="e#4783#4784#0" expanded="true" />
+            <element signature="e#2919#3073#0" expanded="true" />
+            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#3208#3364#0" expanded="true" />
+            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="e#3410#3730#0" expanded="true" />
+            <element signature="e#3622#3652#0" expanded="true" />
+            <element signature="e#3729#3730#0" expanded="true" />
+            <element signature="e#4445#5029#0" expanded="true" />
+            <element signature="e#5028#5029#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2420,6 +2462,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.3691275">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2496,30 +2539,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.444445">
-          <caret line="200" column="28" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2674#2828#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2963#3119#0" expanded="true" />
-            <element signature="e#3118#3119#0" expanded="true" />
-            <element signature="e#3165#3485#0" expanded="true" />
-            <element signature="e#3377#3407#0" expanded="true" />
-            <element signature="e#3484#3485#0" expanded="true" />
-            <element signature="e#4200#4784#0" expanded="true" />
-            <element signature="e#4783#4784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-23/android/widget/ListView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#0#155378#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4885#4886#0" expanded="false" />
+            <element signature="e#4920#4921#0" expanded="false" />
+            <element signature="e#7030#7031#0" expanded="false" />
+            <element signature="e#7097#7098#0" expanded="false" />
+            <element signature="e#11124#11125#0" expanded="false" />
+            <element signature="e#11168#11169#0" expanded="false" />
+            <element signature="e#11222#11223#0" expanded="false" />
+            <element signature="e#11268#11269#0" expanded="false" />
+            <element signature="e#14699#14700#0" expanded="false" />
+            <element signature="e#14743#14744#0" expanded="false" />
+            <element signature="e#14797#14798#0" expanded="false" />
+            <element signature="e#14843#14844#0" expanded="false" />
+            <element signature="e#15945#15946#0" expanded="false" />
+            <element signature="e#15976#15977#0" expanded="false" />
+            <element signature="e#16327#16328#0" expanded="false" />
+            <element signature="e#16378#16379#0" expanded="false" />
+            <element signature="e#33525#33526#0" expanded="false" />
+            <element signature="e#33579#33580#0" expanded="false" />
+            <element signature="e#33907#33908#0" expanded="false" />
+            <element signature="e#33957#33958#0" expanded="false" />
+            <element signature="e#41383#41384#0" expanded="false" />
+            <element signature="e#41451#41452#0" expanded="false" />
+            <element signature="e#45827#45828#0" expanded="false" />
+            <element signature="e#45854#45855#0" expanded="false" />
+            <element signature="e#78489#78490#0" expanded="false" />
+            <element signature="e#78548#78549#0" expanded="false" />
+            <element signature="e#78957#78958#0" expanded="false" />
+            <element signature="e#79005#79006#0" expanded="false" />
+            <element signature="e#84073#84074#0" expanded="false" />
+            <element signature="e#84124#84125#0" expanded="false" />
+            <element signature="e#84354#84355#0" expanded="false" />
+            <element signature="e#84405#84406#0" expanded="false" />
+            <element signature="e#111726#111727#0" expanded="false" />
+            <element signature="e#111774#111775#0" expanded="false" />
+            <element signature="e#111816#111817#0" expanded="false" />
+            <element signature="e#111862#111863#0" expanded="false" />
+            <element signature="e#125497#125498#0" expanded="false" />
+            <element signature="e#125534#125535#0" expanded="false" />
+            <element signature="e#137428#137429#0" expanded="false" />
+            <element signature="e#137459#137460#0" expanded="false" />
+            <element signature="e#138327#138328#0" expanded="false" />
+            <element signature="e#138364#138365#0" expanded="false" />
+            <element signature="e#139440#139441#0" expanded="false" />
+            <element signature="e#139485#139486#0" expanded="false" />
+            <element signature="e#140155#140156#0" expanded="false" />
+            <element signature="e#140200#140201#0" expanded="false" />
+            <element signature="e#140713#140714#0" expanded="false" />
+            <element signature="e#140753#140754#0" expanded="false" />
+            <element signature="e#141294#141295#0" expanded="false" />
+            <element signature="e#141334#141335#0" expanded="false" />
+            <element signature="e#153046#153047#0" expanded="false" />
+            <element signature="e#153093#153094#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2533,11 +2612,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/TimelineActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5060241">
-          <caret line="28" column="51" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#869#899#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/app/com/example/android/twitteroauth/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.9900373">
+          <caret line="252" column="41" selection-start-line="252" selection-start-column="41" selection-end-line="252" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2919#3073#0" expanded="true" />
+            <element signature="e#3072#3073#0" expanded="true" />
+            <element signature="e#3208#3364#0" expanded="true" />
+            <element signature="e#3363#3364#0" expanded="true" />
+            <element signature="e#3410#3730#0" expanded="true" />
+            <element signature="e#3622#3652#0" expanded="true" />
+            <element signature="e#3729#3730#0" expanded="true" />
+            <element signature="e#4445#5029#0" expanded="true" />
+            <element signature="e#5028#5029#0" expanded="true" />
           </folding>
         </state>
       </provider>
