@@ -8,15 +8,18 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
+
 import timber.log.Timber;
 
 public class ListViewAdapter extends ArrayAdapter<String> {
 
     private Activity context;
-    private String[] tweetText;
-    private String[] imageUrl;
+    private ArrayList<String> tweetText;
+    private ArrayList<String> imageUrl;
 
-    public ListViewAdapter(Activity context, String[] tweetText, String[] imageUrl) {
+    public ListViewAdapter(Activity context, ArrayList<String> tweetText, ArrayList<String> imageUrl) {
         super(context, R.layout.activity_listview, tweetText);
         this.context = context;
         this.tweetText = tweetText;
@@ -34,8 +37,8 @@ public class ListViewAdapter extends ArrayAdapter<String> {
         }
 
         ListViewHolder viewHolder = (ListViewHolder) view.getTag();
-        viewHolder.txtTitle.setText(tweetText[position]);
-        loadAvatar(imageUrl[position], viewHolder.avatarView);
+        viewHolder.txtTitle.setText(tweetText.get(position));
+        loadAvatar(imageUrl.get(position), viewHolder.avatarView);
 
         return view;
     }
